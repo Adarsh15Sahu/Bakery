@@ -14,12 +14,12 @@
         display: flex;
         /* right: 70px; */
         top: 10px;
-        li{
-            font-size: 1rem;
-            color: black;
-        }
+        
     }
-
+    .nav ul li{
+        font-size: 1rem;
+        color: green;
+    }
     .content {
         height: 430px;
         display: flex;
