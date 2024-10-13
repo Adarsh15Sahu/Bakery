@@ -1,480 +1,285 @@
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: rgb(0, 0, 0);
-    overflow-x: hidden;
-    width: 100vw;
-    color: rgb(0, 0, 0);
-}
 *{
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    list-style: none; 
-}
-.navbar {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* max-width: 100%; */
-    padding: 0 20px;
-    height: 70px;
-    background-color: rgb(21, 12, 1);
-}
-
-.logo {
-    width: 30%;
-    margin-left: 0;
-
-    em {
-        font-size: 3.0rem;
-        color: rgba(255, 165, 134, 1);
-    }
-}
-
-a {
-    color: rgba(255, 165, 134, 1);
-}
-.menu {
-    width: 70%;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-    text-transform: uppercase;
-
-    ul {
-        width: 70%;
-        display: flex;
-        position: absolute;
-        align-items: center;
-        justify-content: space-evenly;
-        font-size: 1.4rem;
-        text-shadow: 4px 4px 6px pink;
-    }
-}
-
-.menu ul li:nth-child(1) {
-    text-decoration: white underline;
-}
-
-.menu ul li:hover {
-    text-decoration: white underline;
-}
-
-.sub_menu1 {
-    display: none;
-}
-
-.menu ul li:hover .sub_menu1 {
-    display: block;
-    position: absolute;
-    margin-left: -10px;
-    border-radius: 10px;
-    background: rgb(0, 0, 0);
-    border: 3px solid rgb(255, 255, 255);
-}
-
-.menu ul li:hover .sub_menu1 ul {
-    display: block;
-    width: 100px;
-    margin: 10px 0 10px 20px;
-    position: relative;
-    /* margin-left: -5px; */
-}
-
-.menu ul li:hover .sub_menu1 ul li {
-    /* border-bottom: 2px dotted rgb(0, 0, 0); */
-    text-align: left;
-    padding: 10px;
-    border-radius: 0;
-    background: transparent;
-    width: 100px;
-    margin-left: -9px;
-}
-
-.menu ul li:hover .sub_menu1 ul li:last-child {
-    border: none;
-}
-
-.sub_menu1 ul li a:hover {
-    text-shadow: 2px 2px 2px green;
-    color: greenyellow;
-
-}
-
-.sub_menu1 ul li:hover {
-    text-decoration: none;
-}
-section {
-    /* min-height: 600px; */
-    display: flex;
-    flex-direction: column;
-    min-height: calc(90vh - 30px);
-    /* height: 98vh; */
-    /* height: 100vh-70px; */
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    background: #c57e65;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
-    border-bottom: 3px solid rgb(255, 255, 255);
-}
-section:nth-child(4) {
-    background-color: rgb(0, 0, 0);
     
+   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.home{
-    color: white;
+a{
+    text-decoration: none;
+    color: none;
 }
-.back
+li{
+    list-style: none;
+
+}
+::-webkit-scrollbar {
+    display: none;
+    /* Hides the scrollbar */
+}
+body{
+    color: wheat;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+    font-family: 'Times New Roman', Times, serif;
+}
+.hero
 {
-    width: 90%;
-    margin-left: auto;
-    color: white;
-    margin-right: auto;
-    /* border: 5px solid rgb(255, 255, 255); */
-    border-radius: 30px;
-    background-image: url('https://img.freepik.com/premium-photo/bakery-products-background-front-view-bakery-shop-website-advertisement-banners-posters_809816-1.jpg');
-    background-size: cover;
-    height: calc(90vh - 70px);
+    width: 100%;
+    height: 500px;
+    background-image: url(hero3.jpg);
+    background-size: 100% 500px;
+    background-repeat: no-repeat;
     background-position: center;
-    box-shadow: -3px -3px 10px lightcoral,
-        3px -3px 10px lightcoral,
-        -3px 3px 10px lightcoral,
-        3px 3px 10px lightcoral;
-
-}
-.second {
+    /* object-fit: cover; */
     display: flex;
-    text-align: center;
-    width: 40%;
-    color: white;
+    flex-direction: column;
+}
+
+.nav
+{
+    width: 100%;
+    height: 70px;  
+}
+.nav ul {
+    width: 50%;
+    display: flex;
+    right: 70px;
+    top: 10px;
+    position: absolute;
     align-items: center;
+    justify-content: space-evenly;
 }
-
-.content {
-    width: 80%;
-    color: white;
+.nav ul li{
+    justify-content: space-between;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    
+    text-shadow: none;
+    a{
+        color: black;
+    }
+    /* text-transform: uppercase;*/
 }
+.nav ul li:hover{
+    cursor: pointer;
 
-.logo2 {
-    color: white;
-    font-size: 2.5rem;
+}
+.content{
+    height: 430px;
     display: flex;
-    height: 80vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 20%;
-    position: relative;
-    text-shadow: 2px 2px 2px rgb(0, 200, 255);
-    i {
-        margin-bottom: 30px;
+    color: wheat;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+    em{
+        position: absolute;
+        top: 120px;
+        font-size: 3rem;
+        font-weight: 900;
+        color: wheat;
     }
-}
-.footer{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    background-color: black;
-    color: white;
-    align-items: center;
-    justify-content: center;
+    h6{
+        position: absolute;
+        top: 200px;
+    }
     p{
         position: absolute;
-        right: 50px;
+        top: 220px;
+        
     }
+    
 }
 
 
-
-
-/* cake  section */
-.main {
-    width: 90%;
-    height:calc(90vh - 30px);
-    margin-top: 50px;
+.feature{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    h1{
+        margin-bottom: 8px;
+        color: wheat;
+        text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+    }
+}
+.image-container{
+    display: flex;
     margin-left: auto;
-    color: white;
     margin-right: auto;
-    border: 4px solid black;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    overflow-y: hidden;
-    margin-bottom: 20px;
-    background-color: rgb(0, 0, 0);
-    box-shadow: -3px -3px 10px lightcoral,
-            3px -3px 10px lightcoral,
-            -3px 3px 10px lightcoral,
-            3px 3px 10px lightcoral;
-    /* background: linear-gradient(to right, yellow, white, yellow); */
+    width: 90%;
+    height: 310px;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background: wheat; */
 }
-
-.cake-container {
-    overflow-y: auto;
-    /* This will allow the cake container to scroll vertically */
-    height: 100%;
-    /* Make the container take up the full height of the main element */
-    padding: 10px;
-    flex: 1;
-    /* Add some padding to the container */
-    
-}
-
-.cakes {
-    width: 100%;
-    height: 290px;
-    display: flex;
-    margin-bottom: 20px;
-    
-    /* border: 2px solid black; */
-    /* Add some margin between each cake element */
-}
-
-::-webkit-scrollbar {
-    width: 0;
-}
-
-.image {
-    width: 200px;
-    height: 290px;
-    margin-top: 10px;
-    margin-left: 25px;
-    display: flex;
-    flex-direction: column;
-}
-
-.image:nth-child(1) {
-    margin-left: 11px;
-}
-
-img {
-    width: 200px;
-    height: 190px;
-    border-radius: 10px;
-}
-
-.data {
-    padding-left: 15px;
-    padding-top: 5px;
-    display: flex;
-    border: 2px solid green;
-    margin-top: 5px;
-    border-radius: 10px;
-    height: 70px;
-    flex-direction: column;
-}
-
-button {
-    color: black;
-    border: 2px solid black;
-    background-color: white;
-    border-radius: 5px;
-    width: 80px;
-    height: 20px;
-
-    margin-bottom: 3px;
-
-}
-
-button:hover {
-    background-color: rgb(115, 240, 83);
-
-}
-
-.name {
-    display: flex;
-    flex-direction: column;
-}
-
-img:hover {
-    transform: scale(1.03);
-
-
-}
-#back-to-top{
-    position: absolute;
-    bottom: 30px;
-    right: 20px;
-    width: 30px;
-    height: 30px;
-    background-color: #1f242d;
-    color: white;
-    box-shadow:
-            -3px -3px 20px rgb(97, 97, 97),
-            3px -3px 20px rgb(97, 97, 97),
-            -3px 3px 20px rgb(97, 97, 97),
-            3px 3px 20px rgb(97, 97, 97);
-    
-    /* z-index: 1; */
-}
-em{
-    position: absolute;
-    right: auto;
-    left: auto;
-    top: 0px;
-    font-size: 1.3rem;
-}
-#cake,#snacks{
-    position: relative;
-    
-}
-#snacks #main2{
-    width: 60%;
-    margin-right: 80px;
-    height: calc(100vh-70px);
-    .cake-container{
-        margin-left: 0;
-    }
-}
-/* #cake-container2{
-    height: 90%;
-} */
-
-
-.block{
-    width: 100%;
-    /* height: calc(100vh - 70px);/ */
-    display: flex;
-}
-/* cup  */
-.cup-plate{
-    position: absolute;
-    width: 300px;
+.image-container .image{
     height: 300px;
-    
-    left: 140px;
-    bottom: 50px;
+    width: 250px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /* text-shadow: 0 0 5px #000000, 0 0 5px #000000; */
+    display: flex;
+    flex-direction: column;
+    img{
+        width: 240px;
+        height: 250px;
+        border-radius: 10px;
+        /* margin-top: 4px;
+        margin-left: 5px; */
+    }
 }
-.cup
-{
-    position: relative;
-    width: 180px;
-    height: 200px;
-    background: linear-gradient(to right , #f9f9f9,#d9d9d9);
+/*  Journey*/
+.h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.journey{
+    display: flex;
+    width: 100%;
+    height: 430px;
+}
+/* slider */
+.container{
+    /* padding: 2rem; */
+    width: 50%;
+    position: absolute;
+    margin-top: 10px;
+    left: 20px;
     
-    border-bottom-left-radius: 45%;
-    border-bottom-right-radius: 45%;
+}
+.slider-wrapper{
+    position: relative;
+    max-width: 45rem;
+    
+    /* margin: 0 auto; */
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgb(74, 74, 86);
+}
+.slider{
+    display: flex;
+    overflow: auto;
+    aspect-ratio: 16/9;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    animation: slide infinite 10s;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    
+    /* object-fit: cover; */
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
 
 }
-.top{
-    position: absolute;
-    top: -30px;
-    left: 0;
-    width: 100%;
-    height: 60px;
-    border-radius: 50%;
-    background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+.slider-nav a:hover{
+    opacity: 1;
 }
-.cir
-{
-    position: absolute;
-    top: 5px;
-    left: 10px;
-    width: calc(100% - 20px);
-    height: 50px;
-    border-radius: 50%;
-    box-sizing: border-box;
-    background: linear-gradient(to left, #f9f9f9, #d9d9d9);
-    overflow: hidden;
-}
-.tea{
-    position: absolute;
-    top: 20px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#c57e65,#e28462);
-    border-radius: 50%;
-}
-.handle{
-    position: absolute;
-    top: 25px;
-    right: -45px;
-    width: 80px;
-    height: 70px;
-    border: 15px solid #dcdcdc;
-    border-radius: 50%;
-    transform: rotate(45deg);
-    border-left: 25px solid transparent ;
-    border-bottom: 25px solid transparent ;
-}
-.plate{
-    position: absolute;
-    bottom: 60px;
-    left: 30%;
-    transform: translateX(-50%);
-    width: 300px;
-    height: 100px;
-    background: linear-gradient(to right,#f9f9f9,#e7e7e7);
-    border-radius: 50%;
-    box-shadow: 0 35px 36px rgba(0,0,0,0.2);
-}
-.plate::before{
-    content: '';
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    background: linear-gradient(to left, #f9f9f9,#e7e7e7);
-    border-radius: 50%;
-}
-.plate::after{
-    content: '';
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    left: 30px;
-    bottom: 30px;
-    border-radius: 50%;
-    background: radial-gradient(rgba(0,0,0,0.2) 25%,transparent,transparent);
-}
-.vapour{
-    position: relative;
-    display: flex;
-    z-index: 1;
-    padding: 0 20px;
-}
-.vapour span{
-    position: relative;
-    bottom: 50px;
-    display: block;
-    margin: 0 2px 5px;
-    min-width: 8px;
-    height: 120px;
-    background: #fff;
-    border-radius: 50%;
-    animation: animate 5s linear infinite;
-    opacity: 0;
-    filter: blur(8px);
-    animation-delay: calc(var(--i) * -0.5s);
-}
-@keyframes animate{
+@keyframes slide{
     0%{
-        transform: translateY(0) scaleX(1);
-        opacity: 0;
+        background: url(photo1.png);
     }
-    15%{
-        opacity: 1;
+    25%{
+        background: url(photo2.png);
     }
     50%{
-        transform: translateY(-150px) scaleX(5);
-
-    }
-    95%{
-        opacity: 0;
+        background: url(photo3.png);
     }
     100%{
-        transform: translateY(-300px) scaleX(10);
+        background: url(photo4.png);
     }
-
 }
+.journey-content{
+    width: 40%;
+    height: 300px;
+    margin-top: 40px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    position: absolute;
+    
+    right: 20px;
+    background-color: rgb(244, 244, 244);
+    color: rgb(101, 67, 33);
+}
+.product{
+    width: 100%;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.product .image-container{
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+/* footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact,
+.footer-social {
+    margin: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 10px 0;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #f8b400;
+    text-decoration: none;
+}
+
+.footer-social a {
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+i{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
