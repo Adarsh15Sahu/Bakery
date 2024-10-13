@@ -9,8 +9,14 @@
         background-position: center;
     }
 
-    .nav {
-        background: blue;
+    .nav ul {
+        width: 50%;
+        display: flex;
+        /* right: 70px; */
+        top: 10px;
+        li{
+            
+        }
     }
 
     .content {
