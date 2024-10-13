@@ -14,12 +14,12 @@
         display: flex;
         /* right: 70px; */
         top: 10px;
-        li{
+        
+    }
+    .nav ul li{
             font-size: 1rem;
             color: green;
-        }
     }
-
     .content {
         height: 430px;
         display: flex;
@@ -139,7 +139,7 @@
     .journey .journey-content{
         /* display: none; */
         width: 80%;
-        height: 250px;
+        height: 230px;
         margin-top: 240px;
         font-size: 1rem;
         right: 25px;
