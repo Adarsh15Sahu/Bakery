@@ -52,7 +52,6 @@ body{
     justify-content: space-between;
     font-size: 1.5rem;
     font-weight: 1000;
-    
     text-shadow: none;
     a{
         color: black;
@@ -70,7 +69,7 @@ body{
     align-items: center;
     justify-content: center;
     color: wheat;
-    text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+    /* text-shadow: 0 0 5px #000000, 0 0 5px #000000; */
     em{
         position: absolute;
         top: 120px;
@@ -85,7 +84,6 @@ body{
     p{
         position: absolute;
         top: 220px;
-        
     }
     
 }
@@ -105,6 +103,7 @@ body{
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
     width: 90%;
     height: 310px;
     align-items: center;
@@ -112,11 +111,11 @@ body{
     /* background: wheat; */
 }
 .image-container .image{
-    height: 300px;
+    height: 310px;
     width: 250px;
-    color: rgb(0, 0, 0);
+    color: rgb(101, 67, 33);
     text-align: center;
-    /* text-shadow: 0 0 5px #000000, 0 0 5px #000000; */
+    text-shadow:none;
     display: flex;
     flex-direction: column;
     img{
@@ -129,7 +128,7 @@ body{
 }
 /*  Journey*/
 .h1{
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 10px;
 }
 .journey{
@@ -162,7 +161,7 @@ body{
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
-    animation: slide infinite 10s;
+    /* animation: slide infinite 10s; */
 }
 .slider img{
     flex: 1 0 100%;
