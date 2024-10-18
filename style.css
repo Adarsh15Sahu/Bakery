@@ -40,9 +40,9 @@ body{
     height: 70px;  
 }
 .nav ul {
-    width: 50%;
+    width: 70%;
     display: flex;
-    right: 70px;
+    right: 20px;
     top: 10px;
     position: absolute;
     align-items: center;
